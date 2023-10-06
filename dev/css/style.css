@@ -49,3 +49,9 @@ article .caption {
   border: none;
   border-bottom: 1px dashed #000;
 }
+.exercise div.data input[type=number]::-webkit-inner-spin-button,
+.exercise div.data input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
