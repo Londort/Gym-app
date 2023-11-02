@@ -1,83 +1,27 @@
-// table {
-//     width: 100%;
-//     border-collapse: collapse;
-// }
-// caption {
-//     font-size: 1em;
-//     text-transform: uppercase;
-//     font-weight: bolder;
-//     padding: 10px;
-//     text-align: left;
-//     background-color: #f2f2f2;
-// }
-// tr {
-//     width: 100%;
-//     border-bottom: 1px solid #ddd;
-//     display: flex;
-//     flex-wrap: nowrap;
-//     justify-content: left;
-//     align-items: center;
-//     td{
-//         padding: 10px 5px;
+@import "_var.scss";
 
-//     }
-//     .title{
-//         // font-weight: bold;
-//         width: 50%;
-//     }
-//     .set,.rep,.weight{
-//         justify-self: flex-end;
-//     }
-// }
-// th {
-//     background-color: #f2f2f2;
-//     font-weight: bold;
-// }
-article {
-    background-color: #e54c4c;
-    border: 1px solid #e54c4c;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px 0px;
-
-    .caption {
-        margin: 0px;
-    }
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: $primary-color;
+    color: $text-color-dark;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
-.exercise {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .title {
-        width: 100%;
-        text-align: center;
-        font-size: 1.2em;
-    }
-
-    div.data {
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-
-        [type="number"] {
-            width: 30px;
-            height: 20px;
-            text-align: center;
-            font-size: 1em;
-            background: none;
-            border: none;
-            border-bottom: 1px dashed #000;
-        }
-
-        input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            appearance: none;
-            margin: 0;
-        }
-    }
+button{
+    margin: 40px 0px;
+    border-radius: $border-radius;
+    width:80%;
+    line-height: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: $Arial;
+    background-color: $secondary-color3;
+    color: $primary-color;
+    border: none;
 }

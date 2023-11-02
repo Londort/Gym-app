@@ -1,0 +1,48 @@
+@import "_var.scss";
+
+.days-screen{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    // gap: 20px;
+
+    &__body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    &__list{
+        width: 100%;
+        padding: 0;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $secondary-color1;
+        list-style: none;
+        gap: 40px;
+        li.day-item{
+            height: 100px;
+            width: 80%;
+            background-color: $secondary-color3;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: $border-radius;
+            color: $primary-color;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: $Arial;
+        }
+    }
+    &__button{
+        justify-self: flex-start;
+    }
+}

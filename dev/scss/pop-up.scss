@@ -1,0 +1,60 @@
+@import "_var";
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(4px);
+
+    .pop-up__content {
+        width: 60%;
+        padding: 50px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(#000, .5);
+        border-radius: 20px;
+
+        .pop-up__title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .pop-up__btns {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pop-up__btn {
+            font-size: 1em;
+            width: 100%;
+            height: 10vh;
+            padding: 10px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #eee;
+            }
+        }
+    }
+    .cancel {
+        color: $accent-color;
+        font-size: 1.25em;
+        border: none;
+        border-bottom: 1px dashed $accent-color;
+        align-self: center;
+        background: none;
+    }
+}

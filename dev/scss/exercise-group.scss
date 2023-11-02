@@ -1,0 +1,54 @@
+@import "_var";
+
+.exercise-group{
+    width: 100%;
+    p{
+        font-size: 1.25em;
+        font-family: $Arial;
+        color: $secondary-color1;
+        margin: 10px 0px;
+        background-color: $secondary-color2;
+        align-self: flex-start;
+    }
+    &__wrap{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__header{
+        width: 100%;
+        border-top-right-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+    }
+    &__delete{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &__body{
+        background-color: $secondary-color2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__exercises{
+
+    }
+    &__new-exercise{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    &__footer{
+        width: 100%;
+        border-bottom-right-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+    }
+}
+
